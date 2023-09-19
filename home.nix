@@ -27,10 +27,9 @@ home = {
     pkgs.bat
     pkgs.bottom
     pkgs.delta
-    pkgs.diffoscope
     pkgs.direnv
     pkgs.du-dust
-    pkgs.exa
+    pkgs.eza
     pkgs.fd
     pkgs.fish
     pkgs.fzf
@@ -62,7 +61,6 @@ home = {
     pkgs.pv
     pkgs.python3
     pkgs.ripgrep
-    pkgs.ripgrep-all
     pkgs.sd
     pkgs.sqlite
     pkgs.stylua
