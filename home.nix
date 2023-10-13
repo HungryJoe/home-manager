@@ -59,7 +59,7 @@ home = {
     pkgs.pre-commit
     pkgs.procs
     pkgs.pv
-    pkgs.python3
+    pkgs.python310Full
     pkgs.ripgrep
     pkgs.sd
     pkgs.sqlite
@@ -77,6 +77,8 @@ home = {
     pkgs.liquibase
     pkgs.wget
     pkgs.poetry
+
+    pkgs.python310Packages.pip
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
     # # parentheses. Maybe you want to install Nerd Fonts with a limited number of
@@ -129,6 +131,7 @@ programs = {
     defaultEditor = true;
     vimAlias = true;
     withPython3 = true;
+    extraPython3Packages = pyPkgs: [pyPkgs.pynvim];
   };
 };
 }
