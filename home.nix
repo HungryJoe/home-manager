@@ -1,5 +1,7 @@
 { config, pkgs, ... }:
 
+with pkgs;
+
 {
 home = {
   # Home Manager needs a bit of information about you and the paths it should
@@ -22,63 +24,63 @@ home = {
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
     # pkgs.hello
-    pkgs.bash
-    pkgs.bash-completion
-    pkgs.bat
-    pkgs.bottom
-    pkgs.delta
-    pkgs.direnv
-    pkgs.du-dust
-    pkgs.eza
-    pkgs.fd
-    pkgs.fish
-    pkgs.fzf
-    pkgs.ghostscript
-    pkgs.git
-    pkgs.gitui
-    pkgs.gnupg
-    pkgs.gnutls
-    pkgs.go
-    pkgs.graphviz
-    pkgs.helix
-    pkgs.imagemagick
-    pkgs.jq
-    pkgs.lazygit
-    pkgs.lua
-    pkgs.lua-language-server
-    pkgs.luarocks
-    pkgs.mysql
-    pkgs.nil
-    pkgs.nmap
-    pkgs.nodejs
-    pkgs.pandoc
-    pkgs.pdftk
-    pkgs.perl
-    pkgs.poppler_utils
-    pkgs.postgresql
-    pkgs.pre-commit
-    pkgs.procs
-    pkgs.pv
-    pkgs.python310Full
-    pkgs.ripgrep
-    pkgs.sd
-    pkgs.sqlite
-    pkgs.stylua
-    pkgs.tectonic
-    pkgs.tokei
-    pkgs.tree-sitter
-    pkgs.procps
-    pkgs.zoxide
-    pkgs.gcc
-    pkgs.db
-    pkgs.getopt
-    pkgs.coreutils
-    pkgs.cmakeMinimal
-    pkgs.liquibase
-    pkgs.wget
-    pkgs.poetry
+    bash
+    bash-completion
+    bat
+    bottom
+    delta
+    direnv
+    du-dust
+    eza
+    fd
+    fish
+    fzf
+    ghostscript
+    git
+    gitui
+    gnupg
+    gnutls
+    go
+    graphviz
+    helix
+    imagemagick
+    jq
+    lazygit
+    lua
+    lua-language-server
+    luarocks
+    mysql
+    nil
+    nmap
+    nodejs
+    pandoc
+    pdftk
+    perl
+    poppler_utils
+    postgresql
+    pre-commit
+    procs
+    pv
+    python310Full
+    ripgrep
+    sd
+    sqlite
+    stylua
+    tectonic
+    tokei
+    tree-sitter
+    procps
+    zoxide
+    gcc
+    db
+    getopt
+    coreutils
+    cmakeMinimal
+    liquibase
+    wget
+    poetry
 
-    pkgs.python310Packages.pip
+    python310Packages.pip
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
     # # parentheses. Maybe you want to install Nerd Fonts with a limited number of
