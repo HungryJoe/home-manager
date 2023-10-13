@@ -81,6 +81,16 @@ home = {
     poetry
 
     python310Packages.pip
+
+    nodePackages.typescript
+    nodePackages.typescript-language-server
+    nodePackages.bash-language-server
+    nodePackages.dockerfile-language-server-nodejs
+    nodePackages.pyright
+    nodePackages."@angular/cli"
+    # Nix doesn't currently have @angular/language-server in its package repo,
+    #   so it must be installed manually.
+    
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
     # # parentheses. Maybe you want to install Nerd Fonts with a limited number of
@@ -133,7 +143,9 @@ programs = {
     defaultEditor = true;
     vimAlias = true;
     withPython3 = true;
+    withNodeJs = true;
     extraPython3Packages = pyPkgs: [pyPkgs.pynvim];
+    extraPackages = [nodePackages.neovim];
   };
 };
 }
