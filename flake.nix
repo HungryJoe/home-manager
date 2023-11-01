@@ -8,12 +8,17 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    language-servers = {
+      url = "git+https://git.sr.ht/~bwolf/language-servers.nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { nixpkgs, home-manager, ... }:
+  outputs = { nixpkgs, home-manager, language-servers, ... }:
     let
       system = "x86_64-darwin";
       pkgs = nixpkgs.legacyPackages.${system};
+      ls = language-servers.packages.${system};
     in {
       homeConfigurations."skagan" = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
@@ -24,6 +29,9 @@
 
         # Optionally use extraSpecialArgs
         # to pass through arguments to home.nix
+        extraSpecialArgs = {
+          language-servers = ls;
+        };
       };
     };
 }
