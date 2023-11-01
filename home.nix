@@ -30,6 +30,7 @@ home = {
     bottom
     delta
     direnv
+    nix-direnv
     du-dust
     eza
     fd
@@ -138,6 +139,7 @@ programs = {
 
   # Let Home Manager install and manage itself.
   home-manager.enable = true;
+
   neovim = {
     enable = true;
     defaultEditor = true;
@@ -146,6 +148,11 @@ programs = {
     withNodeJs = true;
     extraPython3Packages = pyPkgs: [pyPkgs.pynvim];
     extraPackages = [nodePackages.neovim];
+  };
+
+  direnv = {
+    enable = true;
+    nix-direnv.enable = true;
   };
 };
 }
