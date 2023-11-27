@@ -80,6 +80,7 @@ home = {
     liquibase
     wget
     poetry
+    sqlitebrowser
 
     python310Packages.pip
 
