@@ -67,7 +67,6 @@ home = {
     sd
     sqlite
     stylua
-    tectonic
     tokei
     tree-sitter
     procps
@@ -81,6 +80,8 @@ home = {
     wget
     poetry
     sqlitebrowser
+    ripgrep
+    ripgrep-all
 
     python310Packages.pip
 
