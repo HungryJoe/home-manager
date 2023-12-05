@@ -58,7 +58,7 @@ home = {
     pdftk
     perl
     poppler_utils
-    postgresql
+    postgresql_14
     pre-commit
     procs
     pv
