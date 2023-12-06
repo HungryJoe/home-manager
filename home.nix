@@ -82,6 +82,7 @@ home = {
     sqlitebrowser
     ripgrep
     ripgrep-all
+    keepassxc
 
     python310Packages.pip
 
