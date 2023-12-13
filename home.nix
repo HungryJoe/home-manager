@@ -82,6 +82,8 @@ home = {
     sqlitebrowser
     ripgrep
     ripgrep-all
+    jdk17
+    maven
     keepassxc
 
     python310Packages.pip
