@@ -85,6 +85,8 @@ home = {
     jdk17
     maven
     keepassxc
+    trufflehog
+    gitleaks
 
     python310Packages.pip
 
