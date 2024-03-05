@@ -82,11 +82,12 @@ home = {
     sqlitebrowser
     ripgrep
     ripgrep-all
-    jdk17
+    jdk8
     maven
     keepassxc
     trufflehog
     gitleaks
+    nginx
 
     python310Packages.pip
 
