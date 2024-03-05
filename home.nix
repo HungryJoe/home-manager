@@ -85,8 +85,6 @@ home = {
     jdk8
     maven
     keepassxc
-    trufflehog
-    gitleaks
     nginx
 
     python310Packages.pip
