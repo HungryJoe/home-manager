@@ -1,4 +1,4 @@
-{ config, pkgs, language-servers, ... }:
+{ config, pkgs, ... }:
 
 with pkgs;
 
@@ -97,7 +97,9 @@ home = {
     nodePackages."@angular/cli"
     # Nix doesn't currently have @angular/language-server in its package repo,
     #   so it must be installed separately.
-    language-servers.angular-language-server
+    # However, it creates issues with Angular 8 projects (https://stackoverflow.com/questions/70689058/angular-8-error-error-unable-to-find-context-associated-with-object-htmldivele/73906147#73906147),
+    #   and the input it was coming from stopped supporting darwin-x86.
+    # language-servers.angular-language-server
     
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
