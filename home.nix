@@ -86,6 +86,7 @@ home = {
     maven
     keepassxc
     nginx
+    drawio
 
     python310Packages.pip
 
