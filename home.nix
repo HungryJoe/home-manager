@@ -87,6 +87,7 @@ home = {
     keepassxc
     nginx
     drawio
+    pyright
 
     python310Packages.pip
 
@@ -94,7 +95,6 @@ home = {
     nodePackages.typescript-language-server
     nodePackages.bash-language-server
     nodePackages.dockerfile-language-server-nodejs
-    nodePackages.pyright
     nodePackages."@angular/cli"
     # Nix doesn't currently have @angular/language-server in its package repo,
     #   so it must be installed separately.
