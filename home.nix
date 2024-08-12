@@ -20,7 +20,9 @@ home = {
 
   # The home.packages option allows you to install Nix packages into your
   # environment.
-  packages = [
+  packages = let 
+    jdk-low-priority = lib.meta.setPrio 10 jdk;
+   in [
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
     # pkgs.hello
@@ -88,6 +90,8 @@ home = {
     nginx
     drawio
     pyright
+    jdt-language-server
+    jdk-low-priority
 
     python310Packages.pip
 
