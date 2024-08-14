@@ -86,7 +86,6 @@ home = {
     ripgrep-all
     jdk8
     maven
-    keepassxc
     nginx
     drawio
     pyright
