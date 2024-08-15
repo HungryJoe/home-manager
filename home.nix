@@ -88,7 +88,6 @@ home = {
     maven
     nginx
     drawio
-    pyright
     jdt-language-server
     jdk-low-priority
 
