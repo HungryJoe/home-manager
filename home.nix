@@ -26,83 +26,102 @@ home = {
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
     # pkgs.hello
-    bash
-    bash-completion
-    bat
-    bottom
-    delta
-    direnv
     nix-direnv
-    du-dust
-    eza
-    fd
-    fish
-    fzf
-    ghostscript
-    git
-    gitui
     gnupg
     gnutls
-    go
-    graphviz
-    helix
     imagemagick
-    jq
-    lazygit
-    lua
-    lua-language-server
-    luarocks
-    mysql
-    nil
     nmap
-    nodejs
-    pandoc
-    pdftk
-    perl
-    poppler_utils
-    postgresql_14
-    pre-commit
-    procs
-    pv
-    python310Full
-    ripgrep
-    sd
-    sqlite
-    stylua
-    tokei
-    tree-sitter
     procps
-    zoxide
-    gcc
-    db
     getopt
     coreutils
-    cmakeMinimal
-    liquibase
-    wget
-    poetry
-    sqlitebrowser
-    ripgrep
-    ripgrep-all
-    jdk8
-    maven
     nginx
-    drawio
+    lazygit
+
+    # Daily essentials
+    helix
+    git
+    pre-commit
+    direnv
+    fish
+    zoxide
+    eza
+    fd
+    ripgrep
+
+    # Not essential, but make the Terminal User-Friendlier
+    jq
+    gitui
+    pv
+    tokei
+    procs
+    wget
+    bat
+    bottom
+    du-dust
+    delta
+    fzf
+    sd
+
+    # Java
+    maven
+    jdk8
     jdt-language-server
     jdk-low-priority
 
+    # Python
+    poetry
+    python310Full
     python310Packages.pip
 
+    # Angular
     nodePackages.typescript
     nodePackages.typescript-language-server
-    nodePackages.bash-language-server
-    nodePackages.dockerfile-language-server-nodejs
     nodePackages."@angular/cli"
+    nodejs
     # Nix doesn't currently have @angular/language-server in its package repo,
     #   so it must be installed separately.
     # However, it creates issues with Angular 8 projects (https://stackoverflow.com/questions/70689058/angular-8-error-error-unable-to-find-context-associated-with-object-htmldivele/73906147#73906147),
     #   and the input it was coming from stopped supporting darwin-x86.
     # language-servers.angular-language-server
+
+    # Bash :(
+    bash
+    bash-completion
+    nodePackages.bash-language-server
+
+    # Lua
+    lua
+    lua-language-server
+    luarocks
+    stylua
+
+    # Misc. languages & their tooling
+    nodePackages.dockerfile-language-server-nodejs
+    perl
+    nil
+    go
+    gcc
+    cmakeMinimal
+
+    # Databases
+    mysql
+    postgresql_14
+    sqlite
+    db
+    liquibase
+    sqlitebrowser
+
+    # Documents & Diagrams
+    ghostscript
+    graphviz
+    pandoc
+    pdftk
+    drawio
+
+    # RGA + Adapters
+    # NB: Only the packages installed specifically for use as rga adapters
+    ripgrep-all
+    poppler_utils
     
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
@@ -159,7 +178,10 @@ programs = {
     withPython3 = true;
     withNodeJs = true;
     extraPython3Packages = pyPkgs: [pyPkgs.pynvim];
-    extraPackages = [nodePackages.neovim];
+    extraPackages = [
+      nodePackages.neovim
+      tree-sitter
+    ];
   };
 
   direnv = {
