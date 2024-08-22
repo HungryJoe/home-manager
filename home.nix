@@ -28,14 +28,11 @@ home = {
     # pkgs.hello
     nix-direnv
     gnupg
-    gnutls
     imagemagick
     nmap
-    procps
     getopt
     coreutils
     nginx
-    lazygit
 
     # Daily essentials
     helix
@@ -89,11 +86,11 @@ home = {
     bash-completion
     nodePackages.bash-language-server
 
-    # Lua
-    lua
-    lua-language-server
-    luarocks
-    stylua
+    # Lua - not needed
+    # lua
+    # lua-language-server
+    # luarocks
+    # stylua
 
     # Misc. languages & their tooling
     nodePackages.dockerfile-language-server-nodejs
