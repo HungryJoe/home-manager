@@ -58,6 +58,7 @@ home = {
     delta
     fzf
     sd
+    procps
 
     # Java
     maven
