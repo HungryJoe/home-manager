@@ -102,7 +102,6 @@ home = {
     cmakeMinimal
 
     # Databases
-    mysql
     postgresql_14
     sqlite
     db
