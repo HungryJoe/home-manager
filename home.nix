@@ -75,15 +75,10 @@ home = {
     pylsp-interpreter
 
     # Angular
-    nodePackages.typescript
     nodePackages.typescript-language-server
     nodePackages."@angular/cli"
-    nodejs
     # Nix doesn't currently have @angular/language-server in its package repo,
-    #   so it must be installed separately.
-    # However, it creates issues with Angular 8 projects (https://stackoverflow.com/questions/70689058/angular-8-error-error-unable-to-find-context-associated-with-object-htmldivele/73906147#73906147),
-    #   and the input it was coming from stopped supporting darwin-x86.
-    # language-servers.angular-language-server
+    #   and anyways installing specific versions of it is easier through npm, which is now installed through Homebrew.
 
     # Bash :(
     bash
