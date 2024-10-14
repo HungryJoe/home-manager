@@ -73,6 +73,7 @@ home = {
     python310Full
     python310Packages.pip
     pylsp-interpreter
+    ruff  # Used for pip-installed pylsp
 
     # Angular
     nodePackages.typescript-language-server
