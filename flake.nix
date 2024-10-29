@@ -13,7 +13,10 @@
   outputs = { nixpkgs, home-manager, ... }:
     let
       system = "x86_64-darwin";
-      pkgs = nixpkgs.legacyPackages.${system};
+      pkgs = import nixpkgs {
+        inherit system;
+        config = {allowUnfree=true;};
+      };
     in {
       homeConfigurations."skagan" = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
