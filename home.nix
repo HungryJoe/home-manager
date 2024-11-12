@@ -56,7 +56,6 @@ home = {
     wget
     bat
     bottom
-    du-dust
     delta
     fzf
     sd
