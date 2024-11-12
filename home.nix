@@ -98,6 +98,8 @@ home = {
     go
     gcc
     cmakeMinimal
+    vscode-langservers-extracted
+    marksman
 
     # Databases
     postgresql_14
@@ -112,6 +114,9 @@ home = {
     pandoc
     pdftk
     drawio
+
+    # Fun
+    ffmpeg-headless
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
