@@ -60,7 +60,6 @@ home = {
     fzf
     sd
     procps
-    diffoscope
 
     # Java
     maven
