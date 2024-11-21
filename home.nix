@@ -22,22 +22,18 @@ home = {
   # environment.
   packages = let 
     jdk-low-priority = lib.meta.setPrio 10 jdk;
-    pylsp-interpreter = lib.meta.setPrio 10 (python312.withPackages (ps: [ps.python-lsp-server ps.pylsp-rope ps.pylint ps.python-lsp-ruff] ++ ps.python-lsp-server.optional-dependencies.all));
-   in [
-    # # Adds the 'hello' command to your environment. It prints a friendly
-    # # "Hello, world!" when run.
-    # pkgs.hello
-    nix
-    nix-direnv
-    gnupg
-    imagemagick
-    nmap
-    getopt
-    coreutils
-    nginx
-
+    pylsp-interpreter = lib.meta.setPrio 10 (
+      python312.withPackages (
+        ps: [ps.python-lsp-server ps.pylsp-rope ps.pylint ps.python-lsp-ruff]
+        ++ ps.python-lsp-server.optional-dependencies.all
+      )
+    );
+  in [
     # Daily essentials
+    coreutils
+    nix
     helix
+    nix-direnv
     git
     pre-commit
     direnv
@@ -115,8 +111,15 @@ home = {
     pdftk
     drawio
 
+    # Misc.
+    gnupg
+    nmap
+    getopt
+    nginx
+
     # Fun
     ffmpeg-headless
+    imagemagick
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
