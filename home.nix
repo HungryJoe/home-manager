@@ -116,6 +116,7 @@ home = {
     nmap
     getopt
     nginx
+    ollama
 
     # Fun
     ffmpeg-headless
