@@ -170,19 +170,6 @@ programs = {
   # Let Home Manager install and manage itself.
   home-manager.enable = true;
 
-  neovim = {
-    enable = true;
-    defaultEditor = true;
-    vimAlias = true;
-    withPython3 = true;
-    withNodeJs = true;
-    extraPython3Packages = pyPkgs: [pyPkgs.pynvim];
-    extraPackages = [
-      nodePackages.neovim
-      tree-sitter
-    ];
-  };
-
   direnv = {
     enable = true;
     nix-direnv.enable = true;
