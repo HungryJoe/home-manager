@@ -117,6 +117,9 @@ home = {
     getopt
     nginx
     ollama
+    grype
+    syft
+    trivy
 
     # Fun
     ffmpeg-headless
