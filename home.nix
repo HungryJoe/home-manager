@@ -120,6 +120,7 @@ home = {
     grype
     syft
     trivy
+    pay-respects
 
     # Fun
     ffmpeg-headless
