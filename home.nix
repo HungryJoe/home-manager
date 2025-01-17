@@ -42,6 +42,7 @@ home = {
     eza
     fd
     ripgrep
+    atuin
 
     # Not essential, but make the Terminal User-Friendlier
     jq
