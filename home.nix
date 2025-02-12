@@ -46,7 +46,7 @@ home = {
 
     # Not essential, but make the Terminal User-Friendlier
     jq
-    gitui
+    lazygit
     pv
     tokei
     procs
