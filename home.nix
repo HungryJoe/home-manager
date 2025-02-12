@@ -118,6 +118,7 @@ home = {
     getopt
     nginx
     ollama
+    lsp-ai
     grype
     syft
     trivy
