@@ -123,6 +123,7 @@ home = {
     syft
     trivy
     pay-respects
+    rustup
 
     # Fun
     ffmpeg-headless
