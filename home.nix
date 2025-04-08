@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, pkgs-python310, ... }:
 
 with pkgs;
 
@@ -27,6 +27,9 @@ home = {
         ps: [ps.python-lsp-server ps.pylsp-rope ps.pylint ps.python-lsp-ruff]
         ++ ps.python-lsp-server.optional-dependencies.all
       )
+    );
+    coding-interpreter = lib.meta.setPrio 8 (
+      pkgs-python310.python310Full.withPackages (ps: [ps.pip])
     );
   in [
     # Daily essentials
@@ -66,8 +69,7 @@ home = {
 
     # Python
     poetry
-    python310Full
-    python310Packages.pip
+    coding-interpreter
     pylsp-interpreter
     ruff  # Used for pip-installed pylsp
 
