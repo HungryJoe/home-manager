@@ -28,9 +28,7 @@ home = {
         ++ ps.python-lsp-server.optional-dependencies.all
       )
     );
-    coding-interpreter = lib.meta.setPrio 8 (
-      pkgs-python310.python310Full.withPackages (ps: [ps.pip])
-    );
+    coding-interpreter = pkgs-python310.python310Full.withPackages (ps: [ps.pip]);
   in [
     # Daily essentials
     coreutils
