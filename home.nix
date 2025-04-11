@@ -44,6 +44,9 @@ home = {
     fd
     ripgrep
     atuin
+    bat
+    delta
+    fzf
 
     # Not essential, but make the Terminal User-Friendlier
     jq
@@ -52,12 +55,10 @@ home = {
     tokei
     procs
     wget
-    bat
     bottom
-    delta
-    fzf
     sd
     procps
+    pay-respects
 
     # Java
     maven
@@ -97,6 +98,7 @@ home = {
     cmakeMinimal
     vscode-langservers-extracted
     marksman
+    rustup
 
     # Databases
     postgresql_14
@@ -117,13 +119,11 @@ home = {
     nmap
     getopt
     nginx
-    ollama
-    lsp-ai
+    # ollama  # Too slow on work Macbook
+    # lsp-ai  # Not worth using atm, completions = bad
     grype
     syft
     trivy
-    pay-respects
-    rustup
 
     # Fun
     ffmpeg-headless
