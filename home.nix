@@ -189,5 +189,10 @@ programs = {
       theme = "catppuccin-latte";
     };
   };
+
+  yazi = {
+    enable = true;
+    enableFishIntegration = true;
+  };
 };
 }
