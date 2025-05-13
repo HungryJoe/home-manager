@@ -187,6 +187,7 @@ programs = {
     enableFishIntegration = true;
     settings = {
       theme = "catppuccin-latte";
+      show_startup_tips = false;
     };
   };
 
