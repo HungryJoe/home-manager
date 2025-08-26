@@ -98,6 +98,7 @@ home = {
     cmakeMinimal
     vscode-langservers-extracted
     marksman
+    markdown-oxide
     rustup
 
     # Databases
@@ -124,6 +125,9 @@ home = {
     grype
     syft
     trivy
+    nerd-fonts.monofur
+    nerd-fonts.victor-mono
+    nerd-fonts.symbols-only
 
     # Fun
     ffmpeg-headless
@@ -195,5 +199,15 @@ programs = {
     enable = true;
     enableFishIntegration = true;
   };
+};
+
+fonts = {
+  fontconfig = {
+    enable = true;
+  };
+};
+
+services = {
+  home-manager.autoExpire.enable = true;
 };
 }
