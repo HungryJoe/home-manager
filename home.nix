@@ -125,6 +125,8 @@ home = {
     grype
     syft
     trivy
+
+    # Fonts
     nerd-fonts.monofur
     nerd-fonts.victor-mono
     nerd-fonts.symbols-only
