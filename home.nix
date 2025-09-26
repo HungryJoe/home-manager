@@ -125,6 +125,9 @@ home = {
     grype
     syft
     trivy
+    lazysql
+    erdtree
+    vivid
 
     # Fonts
     nerd-fonts.monofur
