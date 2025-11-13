@@ -128,6 +128,7 @@ home = {
     lazysql
     erdtree
     vivid
+    keepassxc
 
     # Fonts
     nerd-fonts.monofur
