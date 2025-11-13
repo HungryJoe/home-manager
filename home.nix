@@ -128,6 +128,8 @@ home = {
     lazysql
     erdtree
     vivid
+    mergiraf
+    difftastic
     keepassxc
 
     # Fonts
