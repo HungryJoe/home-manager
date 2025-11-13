@@ -131,6 +131,7 @@ home = {
     mergiraf
     difftastic
     keepassxc
+    yaak
 
     # Fonts
     nerd-fonts.monofur
