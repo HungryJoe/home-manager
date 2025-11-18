@@ -102,7 +102,7 @@ home = {
     rustup
 
     # Databases
-    postgresql_14
+    postgresql_17
     sqlite
     db
     liquibase
