@@ -132,6 +132,7 @@ home = {
     difftastic
     keepassxc
     yaak
+    oh-my-posh
 
     # Fonts
     nerd-fonts.monofur
