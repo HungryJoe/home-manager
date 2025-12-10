@@ -216,8 +216,4 @@ fonts = {
     enable = true;
   };
 };
-
-services = {
-  home-manager.autoExpire.enable = true;
-};
 }
