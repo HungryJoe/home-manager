@@ -91,7 +91,7 @@ home = {
     # stylua
 
     # Misc. languages & their tooling
-    nodePackages.dockerfile-language-server-nodejs
+    dockerfile-language-server
     perl
     nil
     go
