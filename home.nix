@@ -92,6 +92,7 @@ home = {
 
     # Misc. languages & their tooling
     dockerfile-language-server
+    docker-compose-language-service
     perl
     nil
     go
@@ -101,6 +102,7 @@ home = {
     marksman
     markdown-oxide
     rustup
+    yaml-language-server
 
     # Databases
     postgresql_17
