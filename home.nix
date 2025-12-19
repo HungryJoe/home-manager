@@ -70,7 +70,8 @@ home = {
     poetry
     coding-interpreter
     pylsp-interpreter
-    ruff  # Used for pip-installed pylsp
+    ruff
+    ty
 
     # Angular
     nodePackages.typescript-language-server
