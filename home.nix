@@ -74,10 +74,11 @@ home = {
     ty
 
     # Angular
+    nodejs_22  # Supports Angular v18 (archive) and v20 (WS post-upgrade) (Src: https://angular.dev/reference/versions)
     nodePackages.typescript-language-server
     nodePackages."@angular/cli"
     # Nix doesn't currently have @angular/language-server in its package repo,
-    #   and anyways installing specific versions of it is easier through npm, which is now installed through Homebrew.
+    #   and anyways installing specific versions of it is easier through npm.
 
     # Bash :(
     bash
