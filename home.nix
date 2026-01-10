@@ -137,6 +137,7 @@ home = {
     keepassxc
     yaak
     oh-my-posh
+    borgbackup
 
     # Fonts
     nerd-fonts.monofur
