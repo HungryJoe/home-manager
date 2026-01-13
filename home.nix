@@ -111,6 +111,7 @@ home = {
     db
     liquibase
     sqlitebrowser
+    mysql84
 
     # Documents & Diagrams
     ghostscript
@@ -138,6 +139,12 @@ home = {
     yaak
     oh-my-posh
     borgbackup
+    ripgrep-all
+    tectonic
+    gnumake
+    diffoscope
+    dust
+    qmk
 
     # Fonts
     nerd-fonts.monofur
