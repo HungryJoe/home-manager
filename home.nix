@@ -23,7 +23,7 @@ home = {
   packages = let 
     jdk-low-priority = lib.meta.setPrio 10 jdk;
     pylsp-interpreter = lib.meta.setPrio 10 (
-      python312.withPackages (
+      python314.withPackages (
         ps: [ps.python-lsp-server ps.pylsp-rope ps.pylint ps.python-lsp-ruff]
         ++ ps.python-lsp-server.optional-dependencies.all
       )
