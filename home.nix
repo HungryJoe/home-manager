@@ -104,6 +104,7 @@ home = {
     markdown-oxide
     rustup
     yaml-language-server
+    postgres-language-server
 
     # Databases
     postgresql_17
