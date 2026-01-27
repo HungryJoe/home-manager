@@ -1,4 +1,4 @@
-{ config, pkgs, pkgs-python310, ... }:
+{ config, pkgs, pkgs-python310, pkgs-mysql57, ... }:
 
 with pkgs;
 
@@ -29,6 +29,8 @@ home = {
       )
     );
     coding-interpreter = pkgs-python310.python310Full.withPackages (ps: [ps.pip]);
+    gcc-low-priority = lib.meta.setPrio 10 gcc;  # Allow clang's binaries to take precedence over gcc's where they conflict
+    clang-high-priority = lib.meta.setPrio 0 clang;
   in [
     # Daily essentials
     coreutils
@@ -97,7 +99,7 @@ home = {
     perl
     nil
     go
-    gcc
+    gcc-low-priority
     cmakeMinimal
     vscode-langservers-extracted
     marksman
@@ -105,6 +107,7 @@ home = {
     rustup
     yaml-language-server
     postgres-language-server
+    clang-high-priority
 
     # Databases
     postgresql_17
@@ -112,7 +115,8 @@ home = {
     db
     liquibase
     sqlitebrowser
-    mysql84
+    pkgs-mysql57.mysql57
+    pkg-config
 
     # Documents & Diagrams
     ghostscript
