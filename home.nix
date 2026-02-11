@@ -1,4 +1,4 @@
-{ config, pkgs, pkgs-python310, pkgs-mysql57, ... }:
+{ config, pkgs, pkgs-mysql57, ... }:
 
 with pkgs;
 
@@ -28,7 +28,7 @@ home = {
         ++ ps.python-lsp-server.optional-dependencies.all
       )
     );
-    coding-interpreter = pkgs-python310.python310Full.withPackages (ps: [ps.pip]);
+    coding-interpreter = python310.withPackages (ps: [ps.pip]);
     gcc-low-priority = lib.meta.setPrio 10 gcc;  # Allow clang's binaries to take precedence over gcc's where they conflict
     clang-high-priority = lib.meta.setPrio 0 clang;
   in [
