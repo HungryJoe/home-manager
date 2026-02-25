@@ -52,11 +52,28 @@
         "type": "github"
       }
     },
+    "nixpkgs-python310": {
+      "locked": {
+        "lastModified": 1770834626,
+        "narHash": "sha256-EPCjf1jlY4Wm8dtWKLZULWIOwR+VE/zSewYgXX8Npvw=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "15a6983bd3650b968eb59693dfaecb7e82e31c7a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "15a6983bd3650b968eb59693dfaecb7e82e31c7a",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs",
-        "nixpkgs-mysql57": "nixpkgs-mysql57"
+        "nixpkgs-mysql57": "nixpkgs-mysql57",
+        "nixpkgs-python310": "nixpkgs-python310"
       }
     }
   },

@@ -4,6 +4,7 @@
   inputs = {
     # Specify the source of Home Manager and Nixpkgs.
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs-python310.url = "github:nixos/nixpkgs/15a6983bd3650b968eb59693dfaecb7e82e31c7a";  # Found via Git history on GH
     nixpkgs-mysql57.url = "github:nixos/nixpkgs/06c9198cbf48559191bf6c9b76c0f370f96b8c33";  # Found via https://lazamar.co.uk/nix-versions
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -11,7 +12,7 @@
     };
   };
 
-  outputs = { nixpkgs, nixpkgs-mysql57, home-manager, ... }:
+  outputs = { nixpkgs, nixpkgs-python310, nixpkgs-mysql57, home-manager, ... }:
     let
       system = "aarch64-darwin";
       pkgs = import nixpkgs {
@@ -19,6 +20,9 @@
         config = {allowUnfree=true;};
       };
       pkgs-mysql57 = import nixpkgs-mysql57 {
+        inherit system;
+      };
+      pkgs-python310 = import nixpkgs-python310 {
         inherit system;
       };
     in {
@@ -33,6 +37,7 @@
         # to pass through arguments to home.nix
         extraSpecialArgs = {
           inherit pkgs-mysql57;
+          inherit pkgs-python310;
         };
       };
     };
