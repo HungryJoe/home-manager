@@ -3,7 +3,7 @@
 
   inputs = {
     # Specify the source of Home Manager and Nixpkgs.
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
     nixpkgs-python310.url = "github:nixos/nixpkgs/15a6983bd3650b968eb59693dfaecb7e82e31c7a";  # Found via Git history on GH
     nixpkgs-mysql57.url = "github:nixos/nixpkgs/06c9198cbf48559191bf6c9b76c0f370f96b8c33";  # Found via https://lazamar.co.uk/nix-versions
     home-manager = {
