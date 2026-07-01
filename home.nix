@@ -1,4 +1,4 @@
-{ config, pkgs, pkgs-python310, pkgs-mysql57, ... }:
+{ config, pkgs, pkgs-python310, pkgs-python311, pkgs-mysql57, ... }:
 
 with pkgs;
 
@@ -29,6 +29,7 @@ home = {
       )
     );
     coding-interpreter = pkgs-python310.python310.withPackages (ps: [ps.pip]);
+    next-coding-interpreter = lib.meta.setPrio 9 (pkgs-python311.python311.withPackages (ps: [ps.pip]));
     gcc-low-priority = lib.meta.setPrio 10 gcc;  # Allow clang's binaries to take precedence over gcc's where they conflict
     clang-high-priority = lib.meta.setPrio 0 clang;
   in [
@@ -71,6 +72,7 @@ home = {
     # Python
     poetry
     coding-interpreter
+    next-coding-interpreter
     pylsp-interpreter
     ruff
     ty
