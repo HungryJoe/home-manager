@@ -125,6 +125,7 @@ home = {
     pandoc
     pdftk
     drawio
+    poppler-utils
 
     # Misc.
     gnupg
