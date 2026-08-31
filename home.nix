@@ -80,8 +80,7 @@ home = {
     # Angular
     nodejs_22  # Supports Angular v18 (archive) and v20 (WS post-upgrade) (Src: https://angular.dev/reference/versions)
     typescript-language-server
-    # Nix doesn't currently have @angular/language-server in its package repo,
-    #   and anyways installing specific versions of it is easier through npm.
+    angular-language-server
 
     # Bash :(
     bash
