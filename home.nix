@@ -131,8 +131,6 @@ home = {
     nmap
     getopt
     nginx
-    # ollama  # Too slow on work Macbook
-    # lsp-ai  # Not worth using atm, completions = bad
     grype
     syft
     trivy
