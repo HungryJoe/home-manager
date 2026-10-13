@@ -137,6 +137,7 @@ home = {
     diffoscope
     dust
     qmk
+    ansifilter
 
     # Fonts
     nerd-fonts.monofur
