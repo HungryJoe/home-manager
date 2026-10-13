@@ -87,12 +87,6 @@ home = {
     bash-completion
     bash-language-server
 
-    # Lua - not needed
-    # lua
-    # lua-language-server
-    # luarocks
-    # stylua
-
     # Misc. languages & their tooling
     dockerfile-language-server
     docker-compose-language-service
@@ -131,14 +125,8 @@ home = {
     nmap
     getopt
     nginx
-    grype
-    syft
-    trivy
     lazysql
-    erdtree
     vivid
-    mergiraf
-    difftastic
     keepassxc
     yaak
     oh-my-posh
@@ -158,6 +146,19 @@ home = {
     # Fun
     ffmpeg-headless
     imagemagick
+
+    # Unused
+    # grype
+    # syft
+    # trivy
+    # mergiraf
+    # difftastic
+    # erdtree
+    # Lua
+    # lua
+    # lua-language-server
+    # luarocks
+    # stylua
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
