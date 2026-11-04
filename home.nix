@@ -102,6 +102,7 @@ home = {
     yaml-language-server
     postgres-language-server
     clang-high-priority
+    codebook
 
     # Databases
     postgresql_17
