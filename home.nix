@@ -76,6 +76,7 @@ home = {
     pylsp-interpreter
     ruff
     ty
+    uv
 
     # Angular
     nodejs_22  # Supports Angular v18 (archive) and v20 (WS post-upgrade) (Src: https://angular.dev/reference/versions)
